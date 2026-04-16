@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t izharn007/node-app .
+        run: docker build -t izharn007/node-app ./backend
 
       - name: Push Docker image
         run: docker push izharn007/node-app
